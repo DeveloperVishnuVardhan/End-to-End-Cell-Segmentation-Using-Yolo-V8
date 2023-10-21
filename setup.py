@@ -1,3 +1,12 @@
+"""
+Project Title: End-to-End-Cell-Segmentation-Using-Yolov8.
+
+Authors:
+1. Jyothi Vishnu Vardha Kolla.
+
+This code contains the script to create the template of the Project.
+"""
+
 from setuptools import find_packages, setup
 
 setup(
