@@ -20,25 +20,26 @@ The goal of project is build an end-to-end cell-segmentation application.
 data_ingestion_dir
 feature_store_file_path
 data_download_url
-|
-|
-v
-### Data Ingestion Config
-|
-|
-v
-### Initialize Data Ingestion
-|
-|
-v
-### data.zip
-|
-|
-v
-### Unzip and Clean
-|
-|
-v
-### Feature Store
-|
-|
+
+# AZURE-CICD-Deployment-with-Github-Actions
+
+## Save pass:
+
+S6tXzK7IxUHz9O/9jkhciLsseddeQ++E+OcD7nQYy8+ACRDtEgUW
+
+
+## Run from terminal:
+
+docker build -t cellseg.azurecr.io/cell:latest .
+
+docker login cellseg.azurecr.io
+
+docker push cellseg.azurecr.io/cell:latest
+
+
+## Deployment Steps:
+
+1. Build the Docker image of the Source Code
+2. Push the Docker image to Container Registry
+3. Launch the Web App Server in Azure 
+4. Pull the Docker image from the container registry to Web App server and run 
